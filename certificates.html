@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>International Certifications | G-Tec Education Rajakumari</title>
+  <meta name="description" content="Explore global certifications from Microsoft, Meta, Adobe, SAP, Tally, EC-Council, Cisco, PMI, Autodesk, and Zoho Books at G-Tec Education Rajakumari." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <style>
+    .certs-hero {
+      padding-top: calc(var(--header-height, 100px) + 3rem);
+      padding-bottom: 3.5rem;
+      background: linear-gradient(180deg, #0A2540 0%, #062B5C 60%, var(--bg-page) 100%);
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    .cert-filter-btn {
+      padding: 0.6rem 1.2rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--color-gold);
+      background: transparent;
+      color: var(--text-main);
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .cert-filter-btn.active, .cert-filter-btn:hover {
+      background: var(--color-gold);
+      color: var(--color-primary);
+      box-shadow: var(--shadow-gold-glow);
+    }
+  </style>
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+</head>
+<body>
+
+  <!-- Two-Tier Header Navigation System -->
+  <header class="site-navbar">
+    <div class="top-header-tier">
+      <div class="container top-tier-container">
+        <div class="brand-wrapper">
+          <a href="index.html" class="brand-logo-link" aria-label="G-Tec Education Rajakumari Homepage">
+            <img src="assets/images/logo/gtec-logo-clean.png" alt="G-TEC Logo" class="brand-logo-img" />
+          </a>
+          <div class="brand-divider"></div>
+          <span class="brand-title-text" data-gtec-sitename>G-Tec Education Rajakumari</span>
+        </div>
+
+        <div class="top-tier-right">
+          <div class="social-icons-nav">
+            <a href="https://wa.me/919400059100" target="_blank" rel="noopener noreferrer" class="social-icon-link wa-icon" title="WhatsApp" aria-label="WhatsApp">💬</a>
+            <a href="https://www.instagram.com/gtecrajakumari" target="_blank" rel="noopener noreferrer" class="social-icon-link ig-icon" title="Instagram" aria-label="Instagram">📷</a>
+            <a href="https://www.facebook.com/share/14o96Cm6pQS/" target="_blank" rel="noopener noreferrer" class="social-icon-link fb-icon" title="Facebook" aria-label="Facebook">📘</a>
+          </div>
+
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFvyySrpeK4BG2ZAZUw_M4-Ct95dRPb6ZQ-bz7sEQKCxLtQ/viewform" target="_blank" rel="noopener noreferrer" class="btn-join-pill" data-gtec-form>
+            <span>🎓</span> JOIN NOW
+          </a>
+
+          <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-header-tier">
+      <div class="container bottom-tier-container">
+        <nav class="nav-menu">
+          <div class="nav-item"><a href="index.html" class="nav-link"><span>🏠</span> Home</a></div>
+          <div class="nav-item"><a href="index.html#about" class="nav-link"><span>👥</span> About Us</a></div>
+          <div class="nav-item nav-item-has-dropdown">
+            <a href="courses.html" class="nav-link"><span>📚</span> Courses ▾</a>
+            <div class="dropdown-menu">
+              <a href="software.html" class="dropdown-link">Software Courses</a>
+              <a href="accounting.html" class="dropdown-link">Accounting Courses</a>
+              <a href="multimedia.html" class="dropdown-link">Multimedia Courses</a>
+              <a href="sap.html" class="dropdown-link">SAP Global Courses</a>
+              <a href="courses.html" class="dropdown-link">All Courses Directory</a>
+            </div>
+          </div>
+          <div class="nav-item"><a href="certificates.html" class="nav-link active"><span>📜</span> Certificates</a></div>
+          <div class="nav-item"><a href="index.html#gallery" class="nav-link"><span>🖼️</span> Gallery</a></div>
+          <div class="nav-item"><a href="index.html#contact" class="nav-link"><span>📞</span> Contact</a></div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="certs-hero">
+    <div class="container">
+      <span class="badge badge-gold reveal-up">Learn • Get Certified • Build Your Career</span>
+      <h1 class="hero-headline reveal-up" style="margin-top: 0.5rem; font-size: 2.75rem;">
+        International Certifications
+      </h1>
+      <p style="max-width: 720px; margin: 0.5rem auto 2rem auto; color: rgba(255,255,255,0.85);" class="reveal-up">
+        Build globally recognized skills with industry-relevant certifications from Microsoft, Meta, Adobe, SAP, Tally, EC-Council, Cisco, PMI, Autodesk, and Zoho Books.
+      </p>
+
+      <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;" class="reveal-up">
+        <button class="cert-filter-btn active" onclick="filterCerts('all', this)">All Certificates</button>
+        <button class="cert-filter-btn" onclick="filterCerts('software', this)">Software & Security</button>
+        <button class="cert-filter-btn" onclick="filterCerts('accounting', this)">Accounting & ERP</button>
+        <button class="cert-filter-btn" onclick="filterCerts('multimedia', this)">Multimedia & Design</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Catalog Section -->
+  <section class="section-padding bg-ice-white">
+    <div class="container">
+      <div id="certificates-grid-container" class="certificate-grid">
+        <!-- 1. Microsoft -->
+        <article class="certificate-card glass-card is-visible" data-category="technology">
+          <div class="cert-card-header">
+            <img src="assets/images/certificates/microsoft.svg" alt="Microsoft Logo" class="cert-provider-logo" />
+            <span class="badge badge-gold">Technology Certification</span>
+          </div>
+          <div class="cert-card-body">
+            <h3 class="cert-card-title">Microsoft Certification Pathways (MOS & ITS)</h3>
+            <p class="cert-card-provider">Provider: Microsoft</p>
+            <p class="cert-card-desc">Globally accredited certifications validating expert proficiency in Microsoft Office productivity tools (MOS) and core Information Technology fundamentals (ITS).</p>
+            <div class="cert-card-courses">
+              <strong>Associated Courses:</strong>
+              <ul>
+                <li>• Diploma in AI Integrated MS Office</li>
+                <li>• Certificate Course in Advanced Excel</li>
+                <li>• DCA & PGDCA</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cert-card-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFvyySrpeK4BG2ZAZUw_M4-Ct95dRPb6ZQ-bz7sEQKCxLtQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-glow btn-sm" style="width: 100%;" data-gtec-form>Get Certified (Enroll Now)</a>
+          </div>
+        </article>
+
+        <!-- 2. Meta -->
+        <article class="certificate-card glass-card is-visible" data-category="multimedia">
+          <div class="cert-card-header">
+            <img src="assets/images/certificates/meta.svg" alt="Meta Logo" class="cert-provider-logo" />
+            <span class="badge badge-gold">Industry Credential</span>
+          </div>
+          <div class="cert-card-body">
+            <h3 class="cert-card-title">Meta Certified Digital Marketing Associate</h3>
+            <p class="cert-card-provider">Provider: Meta</p>
+            <p class="cert-card-desc">Industry-recognized credential validating digital marketing expertise, social media strategy, ad management, and campaign analytics across Meta platforms.</p>
+            <div class="cert-card-courses">
+              <strong>Associated Courses:</strong>
+              <ul>
+                <li>• Diploma in AI Integrated Graphics Designing</li>
+                <li>• Graphics & Web Expert</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cert-card-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFvyySrpeK4BG2ZAZUw_M4-Ct95dRPb6ZQ-bz7sEQKCxLtQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-glow btn-sm" style="width: 100%;" data-gtec-form>Get Certified (Enroll Now)</a>
+          </div>
+        </article>
+
+        <!-- 3. Adobe -->
+        <article class="certificate-card glass-card is-visible" data-category="multimedia">
+          <div class="cert-card-header">
+            <img src="assets/images/certificates/adobe.svg" alt="Adobe Logo" class="cert-provider-logo" />
+            <span class="badge badge-gold">Software & Design</span>
+          </div>
+          <div class="cert-card-body">
+            <h3 class="cert-card-title">Adobe Certified Professional</h3>
+            <p class="cert-card-provider">Provider: Adobe</p>
+            <p class="cert-card-desc">Industry-standard certifications confirming professional proficiency in Adobe Photoshop, Illustrator, Premiere Pro, and visual media design tools.</p>
+            <div class="cert-card-courses">
+              <strong>Associated Courses:</strong>
+              <ul>
+                <li>• Diploma in Motion Graphics</li>
+                <li>• Advanced Photoshop & Illustrator</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cert-card-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFvyySrpeK4BG2ZAZUw_M4-Ct95dRPb6ZQ-bz7sEQKCxLtQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-glow btn-sm" style="width: 100%;" data-gtec-form>Get Certified (Enroll Now)</a>
+          </div>
+        </article>
+
+        <!-- 4. SAP -->
+        <article class="certificate-card glass-card is-visible" data-category="accounting">
+          <div class="cert-card-header">
+            <img src="assets/images/certificates/sap.svg" alt="SAP Logo" class="cert-provider-logo" />
+            <span class="badge badge-gold">Professional Certification</span>
+          </div>
+          <div class="cert-card-body">
+            <h3 class="cert-card-title">SAP Global Certification Readiness</h3>
+            <p class="cert-card-provider">Provider: SAP</p>
+            <p class="cert-card-desc">Professional enterprise credential pathways for SAP S/4HANA Financial Accounting (FICO), Material Management, and ERP business processes.</p>
+            <div class="cert-card-courses">
+              <strong>Associated Courses:</strong>
+              <ul>
+                <li>• Master in Corporate Management with SAP</li>
+                <li>• SAP FICO & Financial Accounting</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cert-card-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFvyySrpeK4BG2ZAZUw_M4-Ct95dRPb6ZQ-bz7sEQKCxLtQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-glow btn-sm" style="width: 100%;" data-gtec-form>Get Certified (Enroll Now)</a>
+          </div>
+        </article>
+
+        <!-- 5. Tally -->
+        <article class="certificate-card glass-card is-visible" data-category="accounting">
+          <div class="cert-card-header">
+            <img src="assets/images/certificates/tally.svg" alt="Tally Logo" class="cert-provider-logo" />
+            <span class="badge badge-gold">Accounting Certification</span>
+          </div>
+          <div class="cert-card-body">
+            <h3 class="cert-card-title">Tally Education Certifications</h3>
+            <p class="cert-card-provider">Provider: Tally Education</p>
+            <p class="cert-card-desc">Official certification suite for Tally Prime, covering GST compliance, TDS filing, payroll management, and computerized corporate accounting.</p>
+            <div class="cert-card-courses">
+              <strong>Associated Courses:</strong>
+              <ul>
+                <li>• Professional Accountant with Tally Prime</li>
+                <li>• GST & TDS Using Tally</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cert-card-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFvyySrpeK4BG2ZAZUw_M4-Ct95dRPb6ZQ-bz7sEQKCxLtQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-glow btn-sm" style="width: 100%;" data-gtec-form>Get Certified (Enroll Now)</a>
+          </div>
+        </article>
+
+        <!-- 6. EC-Council -->
+        <article class="certificate-card glass-card is-visible" data-category="security">
+          <div class="cert-card-header">
+            <img src="assets/images/certificates/eccouncil.svg" alt="EC-Council Logo" class="cert-provider-logo" />
+            <span class="badge badge-gold">Cybersecurity Certification</span>
+          </div>
+          <div class="cert-card-body">
+            <h3 class="cert-card-title">EC-Council Security Certification Suite</h3>
+            <p class="cert-card-provider">Provider: EC-Council</p>
+            <p class="cert-card-desc">Cybersecurity certification pathways covering ethical hacking fundamentals, network defense, SOC monitoring, and digital forensics.</p>
+            <div class="cert-card-courses">
+              <strong>Associated Courses:</strong>
+              <ul>
+                <li>• Diploma in Computer Application</li>
+                <li>• Advanced Python & Cyber Security</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cert-card-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFvyySrpeK4BG2ZAZUw_M4-Ct95dRPb6ZQ-bz7sEQKCxLtQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-glow btn-sm" style="width: 100%;" data-gtec-form>Get Certified (Enroll Now)</a>
+          </div>
+        </article>
+
+        <!-- 7. Cisco -->
+        <article class="certificate-card glass-card is-visible" data-category="networking">
+          <div class="cert-card-header">
+            <img src="assets/images/certificates/cisco.svg" alt="Cisco Logo" class="cert-provider-logo" />
+            <span class="badge badge-gold">Networking Certification</span>
+          </div>
+          <div class="cert-card-body">
+            <h3 class="cert-card-title">Cisco Certified Support Technician (CCST)</h3>
+            <p class="cert-card-provider">Provider: Cisco</p>
+            <p class="cert-card-desc">Foundational networking credential validating core IP routing, switching, IT infrastructure troubleshooting, and network security concepts.</p>
+            <div class="cert-card-courses">
+              <strong>Associated Courses:</strong>
+              <ul>
+                <li>• Diploma in Graphics & IT</li>
+                <li>• Hardware & Networking Basics</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cert-card-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFvyySrpeK4BG2ZAZUw_M4-Ct95dRPb6ZQ-bz7sEQKCxLtQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-glow btn-sm" style="width: 100%;" data-gtec-form>Get Certified (Enroll Now)</a>
+          </div>
+        </article>
+
+        <!-- 8. Zoho Books -->
+        <article class="certificate-card glass-card is-visible" data-category="accounting">
+          <div class="cert-card-header">
+            <img src="assets/images/certificates/zoho.svg" alt="Zoho Books Logo" class="cert-provider-logo" />
+            <span class="badge badge-gold">Financial Software</span>
+          </div>
+          <div class="cert-card-body">
+            <h3 class="cert-card-title">Zoho Books Certified Accountant</h3>
+            <p class="cert-card-provider">Provider: Zoho Books</p>
+            <p class="cert-card-desc">Recognized credential in cloud accounting software, automated invoicing, bank reconciliation, and GST return filing using Zoho Books.</p>
+            <div class="cert-card-courses">
+              <strong>Associated Courses:</strong>
+              <ul>
+                <li>• Professional Certification in AI Integrated Accounting</li>
+                <li>• Smart Accountant</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cert-card-footer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFvyySrpeK4BG2ZAZUw_M4-Ct95dRPb6ZQ-bz7sEQKCxLtQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-glow btn-sm" style="width: 100%;" data-gtec-form>Get Certified (Enroll Now)</a>
+          </div>
+        </article>
+      </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo/gtec-logo-clean.png" alt="G-Tec Education Rajakumari" style="height: 48px;" />
+          <p>G-Tec Education Rajakumari — Global Certification & Career Training Institute.</p>
+          <div class="social-icons-nav">
+            <a href="https://wa.me/919400059100" target="_blank" rel="noopener noreferrer" class="social-icon-link wa-icon" aria-label="WhatsApp">💬</a>
+            <a href="https://www.instagram.com/gtecrajakumari" target="_blank" rel="noopener noreferrer" class="social-icon-link ig-icon" aria-label="Instagram">📷</a>
+            <a href="https://www.facebook.com/share/14o96Cm6pQS/" target="_blank" rel="noopener noreferrer" class="social-icon-link fb-icon" aria-label="Facebook">📘</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">All Courses</a></li>
+            <li><a href="sap.html">SAP Courses</a></li>
+            <li><a href="certificates.html">Certificates Catalog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Direct Links</h4>
+          <ul class="footer-links">
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFvyySrpeK4BG2ZAZUw_M4-Ct95dRPb6ZQ-bz7sEQKCxLtQ/viewform" target="_blank" rel="noopener">Admission Form</a></li>
+            <li><a href="https://wa.me/919400059100" target="_blank" rel="noopener">WhatsApp Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Campus Contact</h4>
+          <p style="font-size: 0.9rem; color: rgba(255,255,255,0.75);">THOLANIKUNNEL PLAZA, UNION BANK Opposite, 2nd Floor, Rajakumari</p>
+          <p style="font-size: 0.9rem; color: var(--color-gold-bright); margin-top: 0.5rem;">Phone: 9400059100</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 G-Tec Education Rajakumari. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/certificates.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    let currentCertCategory = 'all';
+
+    function refreshCertificatesGrid() {
+      let filtered = CERTIFICATES_DATA;
+      if (currentCertCategory !== 'all') {
+        filtered = CERTIFICATES_DATA.filter(c => c.category === currentCertCategory || c.category === 'all');
+      }
+      renderCertificatesGrid("certificates-grid-container", filtered);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      refreshCertificatesGrid();
+    });
+
+    window.addEventListener("gtec:content-loaded", function () {
+      refreshCertificatesGrid();
+    });
+
+    function filterCerts(category, btnElem) {
+      currentCertCategory = category;
+      const allBtns = document.querySelectorAll(".cert-filter-btn");
+      allBtns.forEach(b => b.classList.remove("active"));
+      btnElem.classList.add("active");
+
+      refreshCertificatesGrid();
+    }
+  </script>
+  <script src="js/public-content.js"></script>
+</body>
+</html>

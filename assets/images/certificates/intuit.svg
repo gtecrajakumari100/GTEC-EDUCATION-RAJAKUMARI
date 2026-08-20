@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" rx="16" fill="#0A2540"/>
+  <rect width="120" height="120" rx="16" fill="none" stroke="#D4AF37" stroke-width="2"/>
+  <text x="60" y="68" font-family="'Outfit', sans-serif" font-weight="900" font-size="20" fill="#365EBF" text-anchor="middle">
+    INTUIT
+  </text>
+  <text x="60" y="85" font-family="'Outfit', sans-serif" font-weight="600" font-size="9" fill="#D4AF37" text-anchor="middle">
+    FINANCIAL
+  </text>
+</svg>

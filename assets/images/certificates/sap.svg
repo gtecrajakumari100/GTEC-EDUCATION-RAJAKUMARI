@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" rx="16" fill="#0A2540"/>
+  <rect width="120" height="120" rx="16" fill="none" stroke="#D4AF37" stroke-width="2"/>
+  <path d="M 25 35 L 95 35 L 95 85 L 25 85 Z" fill="#008FD3" rx="8"/>
+  <text x="60" y="70" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" text-anchor="middle">
+    SAP
+  </text>
+</svg>

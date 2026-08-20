@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" rx="16" fill="#0A2540"/>
+  <rect width="120" height="120" rx="16" fill="none" stroke="#D4AF37" stroke-width="2"/>
+  <!-- Adobe A Symbol -->
+  <path d="M 35 90 L 60 30 L 85 90 L 72 90 L 65 72 L 50 72 Z" fill="#FF0000"/>
+  <path d="M 60 30 L 85 90 L 73 90 Z" fill="#D4AF37"/>
+</svg>

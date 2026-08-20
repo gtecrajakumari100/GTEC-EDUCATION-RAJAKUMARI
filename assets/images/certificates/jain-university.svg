@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" width="240" height="120">
+  <rect width="240" height="120" rx="16" fill="#0A2540"/>
+  <rect width="240" height="120" rx="16" fill="none" stroke="#D4AF37" stroke-width="2"/>
+  <g transform="translate(24, 25)">
+    <!-- Academic Crest / Graduation Cap & Shield Emblem -->
+    <path d="M 35 8 L 65 24 L 35 40 L 5 24 Z" fill="#D4AF37"/>
+    <path d="M 18 33 L 18 52 C 18 62 52 62 52 52 L 52 33" fill="none" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 58 26 L 58 55" fill="none" stroke="#F4C542" stroke-width="2.5"/>
+    <circle cx="58" cy="57" r="3" fill="#F4C542"/>
+    <!-- Book emblem -->
+    <path d="M 20 56 L 35 50 L 50 56 L 50 66 L 35 60 L 20 66 Z" fill="#FFFFFF" opacity="0.9"/>
+  </g>
+  <text x="150" y="52" font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="22" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+    JAIN
+  </text>
+  <text x="150" y="74" font-family="'Outfit', 'Inter', sans-serif" font-weight="600" font-size="11" fill="#D4AF37" text-anchor="middle" letter-spacing="2">
+    UNIVERSITY
+  </text>
+</svg>

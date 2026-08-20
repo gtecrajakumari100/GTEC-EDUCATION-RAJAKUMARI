@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Courses & Academic Directory | G-Tec Education Rajakumari</title>
+  <meta name="description" content="Explore complete course catalog at G-Tec Education Rajakumari: Software Development, Python, Power BI, SAP S/4HANA Accounting, Tally Prime, and Multimedia." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <style>
+    .courses-catalog-hero {
+      padding-top: calc(var(--header-height, 100px) + 3rem);
+      padding-bottom: 3.5rem;
+      background: linear-gradient(180deg, #0A2540 0%, #062B5C 60%, var(--bg-page) 100%);
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    .category-overview-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .cat-overview-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-top: 3px solid var(--color-gold);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      box-shadow: var(--shadow-md);
+    }
+
+    .cat-overview-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin-bottom: 0.65rem;
+    }
+
+    .cat-overview-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 1.15rem;
+      flex-grow: 1;
+    }
+
+    .cat-topics-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 1.35rem;
+    }
+
+    .cat-topic-badge {
+      background: #F1F5F9;
+      border: 1px solid var(--border-subtle);
+      color: var(--color-primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-full);
+    }
+
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+      background: var(--bg-surface);
+      padding: 1.25rem 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--color-gold);
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 0.6rem 1.15rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-subtle);
+      background: transparent;
+      color: var(--text-main);
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--color-gold);
+      color: var(--color-primary);
+      border-color: var(--color-gold-bright);
+      box-shadow: var(--shadow-gold-glow);
+    }
+
+    .search-input-wrap {
+      position: relative;
+      min-width: 280px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.65rem 1.25rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-subtle);
+      outline: none;
+      font-family: var(--font-family);
+      font-size: 0.95rem;
+      transition: var(--transition-smooth);
+    }
+
+    .search-input:focus {
+      border-color: var(--color-gold);
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    }
+  </style>
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+</head>
+<body>
+
+  <!-- Two-Tier Header Navigation System -->
+  <header class="site-navbar">
+    <!-- Top Branding Row -->
+    <div class="top-header-tier">
+      <div class="container top-tier-container">
+        <div class="brand-wrapper">
+          <a href="index.html" class="brand-logo-link" aria-label="G-Tec Education Rajakumari Homepage">
+            <img src="assets/images/logo/gtec-logo-clean.png" alt="G-TEC Logo" class="brand-logo-img" />
+          </a>
+          <div class="brand-divider"></div>
+          <span class="brand-title-text" data-gtec-sitename>G-Tec Education Rajakumari</span>
+        </div>
+
+        <div class="top-tier-right">
+          <div class="social-icons-nav">
+            <a href="https://wa.me/919400059100" target="_blank" rel="noopener noreferrer" class="social-icon-link wa-icon" title="WhatsApp" aria-label="WhatsApp">💬</a>
+            <div class="social-sep"></div>
+            <a href="https://www.instagram.com/gtecrajakumari" target="_blank" rel="noopener noreferrer" class="social-icon-link ig-icon" title="Instagram" aria-label="Instagram">📷</a>
+            <div class="social-sep"></div>
+            <a href="https://www.facebook.com/share/14o96Cm6pQS/" target="_blank" rel="noopener noreferrer" class="social-icon-link fb-icon" title="Facebook" aria-label="Facebook">📘</a>
+          </div>
+
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFvyySrpeK4BG2ZAZUw_M4-Ct95dRPb6ZQ-bz7sEQKCxLtQ/viewform" target="_blank" rel="noopener noreferrer" class="btn-join-pill" data-gtec-form>
+            <span>🎓</span> JOIN NOW
+          </a>
+
+          <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Navigation Row -->
+    <div class="bottom-header-tier">
+      <div class="container bottom-tier-container">
+        <nav class="nav-menu">
+          <div class="nav-item"><a href="index.html" class="nav-link"><span>🏠</span> Home</a></div>
+          <div class="nav-item"><a href="index.html#about" class="nav-link"><span>👥</span> About Us</a></div>
+          <div class="nav-item nav-item-has-dropdown">
+            <a href="courses.html" class="nav-link active"><span>📚</span> Courses ▾</a>
+            <div class="dropdown-menu">
+              <a href="software.html" class="dropdown-link">Software Courses</a>
+              <a href="accounting.html" class="dropdown-link">Accounting Courses</a>
+              <a href="multimedia.html" class="dropdown-link">Multimedia Courses</a>
+              <a href="sap.html" class="dropdown-link">SAP Global Courses</a>
+              <a href="courses.html" class="dropdown-link">All Courses Directory</a>
+            </div>
+          </div>
+          <div class="nav-item"><a href="certificates.html" class="nav-link"><span>📜</span> Certificates</a></div>
+          <div class="nav-item"><a href="index.html#gallery" class="nav-link"><span>🖼️</span> Gallery</a></div>
+          <div class="nav-item"><a href="index.html#contact" class="nav-link"><span>📞</span> Contact</a></div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="courses-catalog-hero">
+    <div class="container">
+      <span class="badge badge-gold reveal-up">Complete Academic Directory</span>
+      <h1 class="hero-headline reveal-up" style="margin-top: 0.5rem; font-size: 2.75rem;">Explore All G-Tec Courses</h1>
+      <p style="max-width: 720px; margin: 0.5rem auto 0 auto; color: rgba(255,255,255,0.85);" class="reveal-up">
+        Browse our full range of Master, Diploma, Certificate, and SAP courses across Software, Accounting, and Multimedia.
+      </p>
+    </div>
+  </section>
+
+  <!-- Category Overview Showcase & Filter Catalog Section -->
+  <section class="section-padding bg-ice-white" style="padding-top: 2.5rem;">
+    <div class="container">
+      
+      <!-- Category Overview Section Header -->
+      <div class="section-header reveal-up" style="margin-bottom: 2rem;">
+        <span class="badge badge-gold">Domain Overview</span>
+        <h2 class="section-title heading-gold-accent">Academic Departments & Specialties</h2>
+        <p class="section-subtitle">Comprehensive career tracks structured for modern technology, corporate finance, visual arts, and enterprise ERP systems.</p>
+      </div>
+
+      <!-- 4 Category Overview Cards (Zero Numeric Counts) -->
+      <div class="category-overview-grid reveal-up">
+        <!-- Software -->
+        <div class="cat-overview-card">
+          <h3 class="cat-overview-title">SOFTWARE</h3>
+          <p class="cat-overview-desc">Programming languages, web engineering, database systems, AI tools, and data analytics.</p>
+          <div class="cat-topics-wrap">
+            <span class="cat-topic-badge">Programming</span>
+            <span class="cat-topic-badge">Python</span>
+            <span class="cat-topic-badge">C/C++</span>
+            <span class="cat-topic-badge">Data Analysis</span>
+            <span class="cat-topic-badge">Power BI</span>
+            <span class="cat-topic-badge">Excel</span>
+            <span class="cat-topic-badge">MS Office</span>
+            <span class="cat-topic-badge">Computer Apps</span>
+            <span class="cat-topic-badge">Data Entry</span>
+            <span class="cat-topic-badge">AI Tools</span>
+          </div>
+          <a href="software.html" class="btn btn-primary btn-sm btn-glow" style="width: 100%; margin-top: auto;">View Software Courses →</a>
+        </div>
+
+        <!-- Accounting -->
+        <div class="cat-overview-card">
+          <h3 class="cat-overview-title">ACCOUNTING</h3>
+          <p class="cat-overview-desc">Corporate finance, Tally Prime GST, GCC VAT taxation, and SAP FICO accounting software.</p>
+          <div class="cat-topics-wrap">
+            <span class="cat-topic-badge">Tally Prime</span>
+            <span class="cat-topic-badge">GST Filing</span>
+            <span class="cat-topic-badge">GCC VAT</span>
+            <span class="cat-topic-badge">Financial Accounting</span>
+            <span class="cat-topic-badge">SAP Finance</span>
+            <span class="cat-topic-badge">Business Accounting</span>
+          </div>
+          <a href="accounting.html" class="btn btn-primary btn-sm btn-glow" style="width: 100%; margin-top: auto;">View Accounting Courses →</a>
+        </div>
+
+        <!-- Multimedia -->
+        <div class="cat-overview-card">
+          <h3 class="cat-overview-title">MULTIMEDIA</h3>
+          <p class="cat-overview-desc">Digital graphic designing, motion graphics, visual effects (VFX), video editing, and AI creative tools.</p>
+          <div class="cat-topics-wrap">
+            <span class="cat-topic-badge">Graphic Design</span>
+            <span class="cat-topic-badge">Photoshop</span>
+            <span class="cat-topic-badge">Illustrator</span>
+            <span class="cat-topic-badge">InDesign</span>
+            <span class="cat-topic-badge">Motion Graphics</span>
+            <span class="cat-topic-badge">Creative Design</span>
+          </div>
+          <a href="multimedia.html" class="btn btn-primary btn-sm btn-glow" style="width: 100%; margin-top: auto;">View Multimedia Courses →</a>
+        </div>
+
+        <!-- SAP -->
+        <div class="cat-overview-card">
+          <h3 class="cat-overview-title">SAP GLOBAL</h3>
+          <p class="cat-overview-desc">Enterprise resource planning (ERP), SAP S/4HANA Finance, SAP FICO, and Material Management (MM).</p>
+          <div class="cat-topics-wrap">
+            <span class="cat-topic-badge">SAP S/4HANA</span>
+            <span class="cat-topic-badge">SAP Finance</span>
+            <span class="cat-topic-badge">SAP FICO</span>
+            <span class="cat-topic-badge">SAP MM</span>
+            <span class="cat-topic-badge">ERP Systems</span>
+          </div>
+          <a href="sap.html" class="btn btn-gold btn-sm btn-glow" style="width: 100%; margin-top: auto;">View SAP Courses ★</a>
+        </div>
+      </div>
+      
+      <!-- Interactive Filter Bar (Clean Labels, Zero Numeric Counts) -->
+      <div class="filter-bar reveal-up">
+        <div class="filter-tabs">
+          <button class="filter-btn active" onclick="filterCatalog('all', this)">All Courses</button>
+          <button class="filter-btn" onclick="filterCatalog('software', this)">Software</button>
+          <button class="filter-btn" onclick="filterCatalog('accounting', this)">Accounting</button>
+          <button class="filter-btn" onclick="filterCatalog('multimedia', this)">Multimedia</button>
+          <button class="filter-btn" onclick="filterCatalog('sap', this)">SAP Global</button>
+          <button class="filter-btn" onclick="filterLevel('master', this)">Master</button>
+          <button class="filter-btn" onclick="filterLevel('diploma', this)">Diploma</button>
+          <button class="filter-btn" onclick="filterLevel('certificate', this)">Certificate</button>
+        </div>
+
+        <div class="search-input-wrap">
+          <input type="text" id="course-search-input" class="search-input" placeholder="🔍 Search course name..." oninput="handleSearch(this.value)" />
+        </div>
+      </div>
+
+      <!-- Course Cards Container Grid -->
+      <div id="catalog-courses-grid" class="course-grid">
+        <!-- Dynamically rendered via courses.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo/gtec-logo-clean.png" alt="G-Tec Education Rajakumari" style="height: 48px;" />
+          <p>G-Tec Education Rajakumari delivers career-oriented computer education in Software, SAP ERP, Tally Prime, and Multimedia.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="software.html">Software Courses</a></li>
+            <li><a href="accounting.html">Accounting Courses</a></li>
+            <li><a href="multimedia.html">Multimedia Courses</a></li>
+            <li><a href="certificates.html">Certificates Catalog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Direct Links</h4>
+          <ul class="footer-links">
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeJFvyySrpeK4BG2ZAZUw_M4-Ct95dRPb6ZQ-bz7sEQKCxLtQ/viewform" target="_blank" rel="noopener">Admission Form</a></li>
+            <li><a href="https://wa.me/919400059100" target="_blank" rel="noopener">WhatsApp Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <p style="font-size: 0.9rem; color: rgba(255,255,255,0.75);">THOLANIKUNNEL PLAZA, UNION BANK Opposite, 2nd Floor, Rajakumari</p>
+          <p style="font-size: 0.9rem; color: var(--color-gold-bright); margin-top: 0.5rem;">Phone: 9400059100</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 G-Tec Education Rajakumari. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/courses.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/public-content.js"></script>
+
+  <script>
+    let currentCategory = 'all';
+    let currentLevel = 'all';
+
+    document.addEventListener("DOMContentLoaded", function () {
+      applyFilters();
+    });
+
+    window.addEventListener("gtec:content-loaded", function () {
+      applyFilters();
+    });
+
+    function filterCatalog(category, btnElem) {
+      currentCategory = category;
+      currentLevel = 'all';
+      updateActiveBtn(btnElem);
+      applyFilters();
+    }
+
+    function filterLevel(level, btnElem) {
+      currentLevel = level;
+      updateActiveBtn(btnElem);
+      applyFilters();
+    }
+
+    function updateActiveBtn(btnElem) {
+      const allBtns = document.querySelectorAll(".filter-btn");
+      allBtns.forEach(b => b.classList.remove("active"));
+      btnElem.classList.add("active");
+    }
+
+    function applyFilters() {
+      let filtered = COURSES_DATA;
+      if (currentCategory !== 'all') {
+        filtered = filtered.filter(c => c.category === currentCategory);
+      }
+      if (currentLevel !== 'all') {
+        if (currentLevel === 'certificate') {
+          filtered = filtered.filter(c => c.level === 'certificate' || c.level === 'sap');
+        } else {
+          filtered = filtered.filter(c => c.level === currentLevel);
+        }
+      }
+      renderCourseCards("catalog-courses-grid", filtered);
+    }
+
+    function handleSearch(query) {
+      const term = query.toLowerCase().trim();
+      if (!term) {
+        applyFilters();
+        return;
+      }
+      const searchResults = COURSES_DATA.filter(c => 
+        c.title.toLowerCase().includes(term) ||
+        (c.shortDesc && c.shortDesc.toLowerCase().includes(term)) ||
+        (c.overview && c.overview.toLowerCase().includes(term)) ||
+        c.category.toLowerCase().includes(term)
+      );
+      renderCourseCards("catalog-courses-grid", searchResults);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" rx="16" fill="#0A2540"/>
+  <rect width="120" height="120" rx="16" fill="none" stroke="#D4AF37" stroke-width="2"/>
+  <text x="60" y="70" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" fill="#D4AF37" text-anchor="middle">
+    Tally
+  </text>
+  <text x="60" y="88" font-family="'Outfit', sans-serif" font-weight="600" font-size="10" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+    EDUCATION
+  </text>
+</svg>
