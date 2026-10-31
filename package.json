@@ -1,0 +1,8 @@
+{
+  "name": "gtec-education-rajakumari",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": { "start": "node start.js" },
+  "dependencies": { "mongodb": "^6.9.0" },
+  "engines": { "node": ">=18" }
+}

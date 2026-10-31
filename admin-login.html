@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Administrator Sign In | G-TEC Education Rajakumari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+</head>
+<body class="admin-login">
+  <main class="login-card" aria-labelledby="login-title">
+    <div class="login-branding">
+      <img class="login-logo" src="assets/images/logo/gtec-logo.jpg" alt="G-TEC Education Rajakumari Logo" loading="eager">
+      <p class="login-kicker">Secure administrator portal</p>
+      <h1 id="login-title">Administrator Login</h1>
+      <p class="muted">Sign in to manage your institute content.</p>
+    </div>
+    <form id="login-form">
+      <label class="field">Username<input name="username" autocomplete="username" required maxlength="120"></label>
+      <label class="field">Password<input name="password" type="password" autocomplete="current-password" required></label>
+      <p class="message" id="message" role="alert"></p>
+      <button class="btn btn-primary" type="submit">Sign in securely</button>
+    </form>
+  </main>
+  <script src="js/admin-login.js"></script>
+</body>
+</html>
